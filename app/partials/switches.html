@@ -1,0 +1,141 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <h4>Single Toggle</h4>
+            <pre>{{boolButton}}</pre>
+            <button type="button" class="btn btn-primary" ng-model="boolButton" btn-checkbox btn-checkbox-true="1" btn-checkbox-false="0">Toggle</button>
+        </div>
+        <div class="col-md-3">
+            <h4>Bootstrap Switch</h4>
+            <pre>{{toggleSwitch}}</pre>
+            <input type="checkbox" ng-model="toggleSwitch" name="my-checkbox">
+        </div>
+        <div class="col-md-3">
+            <h4>Binding Test</h4>
+            <pre>{{bindTest}}</pre>
+            <input type="text" ng-model="bindTest">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10">
+            <hr/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <h4>Bootstrap Custom</h4>
+
+            <pre>{{toggleCustom1}}</pre>
+            <input hbs-switch switch-id="1" ng-model="toggleCustom1" switch-state="true" >
+            <hbs-switch switch-id="2" ng-model="toggleCustom2" switch-state="false" ></hbs-switch>
+        </div>
+        <div class="col-md-7">
+            <br/><br/>
+            <input type="button" ng-click="toggleActivation(1)" value="Toggle Enabled 1">
+            <input type="button" ng-click="toggleActivation(2)" value="Toggle Enabled 2">
+            <input type="button" ng-click="toggleActivation()" value="Toggle Enabled *">
+            <br/><br/>
+            <input type="button" ng-click="buttonText(1)" value="Dumb it down 1">
+            <input type="button" ng-click="buttonText(2)" value="Dumb it down 2">
+            <input type="button" ng-click="buttonText()" value="Dumb it down *">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10">
+            <hr/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10">
+            <h4>Size Control</h4>
+            <input hbs-switch ng-model="switchSize" switch-id="switchSizeUpdate" size="mini" >
+            <input hbs-switch ng-model="switchSize" switch-id="switchSizeUpdate" size="small" >
+            <input hbs-switch ng-model="switchSize" switch-id="switchSizeUpdate" size="normal" >
+            <input hbs-switch ng-model="switchSize" switch-id="switchSizeUpdate" size="large" >
+            <br/><br/>
+            <input type="button" ng-click="buttonSize('switchSizeUpdate', 'mini')" value="Size Mini">
+            <input type="button" ng-click="buttonSize('switchSizeUpdate', 'small')" value="Size Small">
+            <input type="button" ng-click="buttonSize('switchSizeUpdate', 'normal')" value="Size Normal">
+            <input type="button" ng-click="buttonSize('switchSizeUpdate', 'large')" value="Size Large">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10">
+            <hr/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10">
+            <h4>Color Control</h4>
+            <input hbs-switch ng-model="switchColor" switch-id="switchColorUpdate" color-on="info" color-off="info" >
+            <br/><br/>
+            <input type="button" ng-click="buttonColors('switchColorUpdate', 'success', 'danger')" value="Color Scheme 1">
+            <input type="button" ng-click="buttonColors('switchColorUpdate', 'primary', 'warning')" value="Color Scheme 2">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10">
+            <hr/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10">
+            <h4>Label Text</h4>
+            <input hbs-switch ng-model="switchLabelText" switch-id="switchLabelUpdate" >
+            <input hbs-switch ng-model="switchLabelText" switch-id="switchLabelUpdate" text-on="True" text-off="False" text-label="Edited" >
+            <br/><br/>
+            <input type="button" ng-click="buttonLabel('switchLabelUpdate', 'Label')" value="Label Text Set">
+            <input type="button" ng-click="buttonLabel('switchLabelUpdate', '')" value="Label Text Blank">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10">
+            <hr/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10">
+            <h4>On Change event</h4>
+            <input hbs-switch ng-model="switchChange" switch-id="switchChange" >
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10">
+            <hr/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10">
+            <h4>Change State and Animate</h4>
+            <input hbs-switch ng-model="switchState1" switch-id="switchState" >
+            <input hbs-switch ng-model="switchState2" switch-id="switchState" switch-animate="false" >
+            <br/><br/>
+            <input type="button" ng-click="toggleState('switchState')" value="Toggle State">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10">
+            <hr/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10">
+            <h4>Destroy A Switch</h4>
+            <input hbs-switch ng-model="switchDestroy" switch-id="switchDestroy" >
+            <br/><br/>
+            <input type="button" ng-click="buttonDestroy('switchDestroy')" value="Destroy">
+        </div>
+    </div>
+</div>
+<br/><br/><br/>
+<script>
+    $(document).ready(function() {
+
+        //wire up the bootstrap switch object.
+        $('input[name="my-checkbox"]').bootstrapSwitch();
+
+    });
+
+</script>

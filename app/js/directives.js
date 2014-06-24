@@ -1,14 +1,8 @@
 'use strict';
 
 /* Directives */
-angular.module('myApp.directives', []).
-  directive('appVersion', ['version', function(version) {
-
-    return function(scope, elm, attrs) {
-      elm.text(version);
-    };
-
-  }]).directive('hbsSwitch', [function($timeout) {
+angular.module('allston.directives', [])
+    .directive('switchBs', function() {
 
     return {
         restrict: 'EA',
@@ -108,4 +102,4 @@ angular.module('myApp.directives', []).
 
         }
     }
-}]);
+});

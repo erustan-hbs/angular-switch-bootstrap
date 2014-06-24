@@ -27,8 +27,8 @@
             <h4>Bootstrap Custom</h4>
 
             <pre>{{toggleCustom1}}</pre>
-            <input hbs-switch switch-id="1" ng-model="toggleCustom1" switch-state="true" >
-            <hbs-switch switch-id="2" ng-model="toggleCustom2" switch-state="false" ></hbs-switch>
+            <input switch-bs switch-id="1" ng-model="toggleCustom1" switch-state="true" >
+            <switch-bs switch-id="2" ng-model="toggleCustom2" switch-state="false" ></switch-bs>
         </div>
         <div class="col-md-7">
             <br/><br/>
@@ -49,10 +49,10 @@
     <div class="row">
         <div class="col-md-10">
             <h4>Size Control</h4>
-            <input hbs-switch ng-model="switchSize" switch-id="switchSizeUpdate" size="mini" >
-            <input hbs-switch ng-model="switchSize" switch-id="switchSizeUpdate" size="small" >
-            <input hbs-switch ng-model="switchSize" switch-id="switchSizeUpdate" size="normal" >
-            <input hbs-switch ng-model="switchSize" switch-id="switchSizeUpdate" size="large" >
+            <input switch-bs ng-model="switchSize" switch-id="switchSizeUpdate" size="mini" >
+            <input switch-bs ng-model="switchSize" switch-id="switchSizeUpdate" size="small" >
+            <input switch-bs ng-model="switchSize" switch-id="switchSizeUpdate" size="normal" >
+            <input switch-bs ng-model="switchSize" switch-id="switchSizeUpdate" size="large" >
             <br/><br/>
             <input type="button" ng-click="buttonSize('switchSizeUpdate', 'mini')" value="Size Mini">
             <input type="button" ng-click="buttonSize('switchSizeUpdate', 'small')" value="Size Small">
@@ -68,7 +68,7 @@
     <div class="row">
         <div class="col-md-10">
             <h4>Color Control</h4>
-            <input hbs-switch ng-model="switchColor" switch-id="switchColorUpdate" color-on="info" color-off="info" >
+            <input switch-bs ng-model="switchColor" switch-id="switchColorUpdate" color-on="info" color-off="info" >
             <br/><br/>
             <input type="button" ng-click="buttonColors('switchColorUpdate', 'success', 'danger')" value="Color Scheme 1">
             <input type="button" ng-click="buttonColors('switchColorUpdate', 'primary', 'warning')" value="Color Scheme 2">
@@ -82,8 +82,8 @@
     <div class="row">
         <div class="col-md-10">
             <h4>Label Text</h4>
-            <input hbs-switch ng-model="switchLabelText" switch-id="switchLabelUpdate" >
-            <input hbs-switch ng-model="switchLabelText" switch-id="switchLabelUpdate" text-on="True" text-off="False" text-label="Edited" >
+            <input switch-bs ng-model="switchLabelText" switch-id="switchLabelUpdate" >
+            <input switch-bs ng-model="switchLabelText" switch-id="switchLabelUpdate" text-on="True" text-off="False" text-label="Edited" >
             <br/><br/>
             <input type="button" ng-click="buttonLabel('switchLabelUpdate', 'Label')" value="Label Text Set">
             <input type="button" ng-click="buttonLabel('switchLabelUpdate', '')" value="Label Text Blank">
@@ -97,7 +97,7 @@
     <div class="row">
         <div class="col-md-10">
             <h4>On Change event</h4>
-            <input hbs-switch ng-model="switchChange" switch-id="switchChange" >
+            <input switch-bs ng-model="switchChange" switch-id="switchChange" >
 
         </div>
     </div>
@@ -109,8 +109,8 @@
     <div class="row">
         <div class="col-md-10">
             <h4>Change State and Animate</h4>
-            <input hbs-switch ng-model="switchState1" switch-id="switchState" >
-            <input hbs-switch ng-model="switchState2" switch-id="switchState" switch-animate="false" >
+            <input switch-bs ng-model="switchState1" switch-id="switchState" >
+            <input switch-bs ng-model="switchState2" switch-id="switchState" switch-animate="false" >
             <br/><br/>
             <input type="button" ng-click="toggleState('switchState')" value="Toggle State">
         </div>
@@ -123,7 +123,7 @@
     <div class="row">
         <div class="col-md-10">
             <h4>Destroy A Switch</h4>
-            <input hbs-switch ng-model="switchDestroy" switch-id="switchDestroy" >
+            <input switch-bs ng-model="switchDestroy" switch-id="switchDestroy" >
             <br/><br/>
             <input type="button" ng-click="buttonDestroy('switchDestroy')" value="Destroy">
         </div>
